@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/agileup-website/static/css/main.5210dedb.chunk.css",
-    "main.js": "/agileup-website/static/js/main.e9c986ed.chunk.js",
-    "main.js.map": "/agileup-website/static/js/main.e9c986ed.chunk.js.map",
-    "runtime-main.js": "/agileup-website/static/js/runtime-main.e61d1c91.js",
-    "runtime-main.js.map": "/agileup-website/static/js/runtime-main.e61d1c91.js.map",
-    "static/css/2.afd40c00.chunk.css": "/agileup-website/static/css/2.afd40c00.chunk.css",
-    "static/js/2.8caf5ec3.chunk.js": "/agileup-website/static/js/2.8caf5ec3.chunk.js",
-    "static/js/2.8caf5ec3.chunk.js.map": "/agileup-website/static/js/2.8caf5ec3.chunk.js.map",
-    "index.html": "/agileup-website/index.html",
-    "precache-manifest.2d93266e71dd6c1b826664dad2678191.js": "/agileup-website/precache-manifest.2d93266e71dd6c1b826664dad2678191.js",
-    "service-worker.js": "/agileup-website/service-worker.js",
-    "static/css/2.afd40c00.chunk.css.map": "/agileup-website/static/css/2.afd40c00.chunk.css.map",
-    "static/css/main.5210dedb.chunk.css.map": "/agileup-website/static/css/main.5210dedb.chunk.css.map",
-    "static/js/2.8caf5ec3.chunk.js.LICENSE.txt": "/agileup-website/static/js/2.8caf5ec3.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.5210dedb.chunk.css",
+    "main.js": "/static/js/main.43650e0f.chunk.js",
+    "main.js.map": "/static/js/main.43650e0f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d9f69b0f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d9f69b0f.js.map",
+    "static/css/2.afd40c00.chunk.css": "/static/css/2.afd40c00.chunk.css",
+    "static/js/2.8caf5ec3.chunk.js": "/static/js/2.8caf5ec3.chunk.js",
+    "static/js/2.8caf5ec3.chunk.js.map": "/static/js/2.8caf5ec3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ddaca65eefad141e672d8417807264c5.js": "/precache-manifest.ddaca65eefad141e672d8417807264c5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.afd40c00.chunk.css.map": "/static/css/2.afd40c00.chunk.css.map",
+    "static/css/main.5210dedb.chunk.css.map": "/static/css/main.5210dedb.chunk.css.map",
+    "static/js/2.8caf5ec3.chunk.js.LICENSE.txt": "/static/js/2.8caf5ec3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e61d1c91.js",
+    "static/js/runtime-main.d9f69b0f.js",
     "static/css/2.afd40c00.chunk.css",
     "static/js/2.8caf5ec3.chunk.js",
     "static/css/main.5210dedb.chunk.css",
-    "static/js/main.e9c986ed.chunk.js"
+    "static/js/main.43650e0f.chunk.js"
   ]
 }
