@@ -18,7 +18,7 @@
 .btn--right {
   display: block;
   margin-left: auto;
-  margin-right: 2em;
+  margin-right: 0;
   max-width: 10em;
 }
 
@@ -27,4 +27,14 @@
   font-style: italic;
   font-weight: 900;
   color: #7ba736;
+  margin-top: 0;
+}
+
+.icon {
+  margin-right: 0.5em;
+  margin-top: 0;
+}
+
+.post__metadata + .post__metadata {
+  margin-top: 0.5em;
 }

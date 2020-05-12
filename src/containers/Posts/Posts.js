@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 
 import PostItem from "../../components/PostItem/PostItem";
 import Card from "../../components/Aux/Card/Card";
-import { Link } from "react-router-dom";
+
 import Spinner from "../../components/Spinner/Spinner";
 
 import styles from "./Posts.module.css";
@@ -59,20 +59,7 @@ class Posts extends Component {
 
     if (!this.state.loading) {
       if (this.state.posts.length) {
-        posts = this.state.posts.map((post, index) => (
-          <Link
-            key={index}
-            to={"/posts/" + post.id}
-            className={styles.CardLink}
-          >
-            <PostItem
-              title={post.title}
-              content={post.body}
-              author={post.author}
-              createdAt={post.createdAt}
-            />
-          </Link>
-        ));
+        posts = this.state.posts.map((post, index) => <PostItem post={post} />);
       } else {
         posts = (
           <Card>
