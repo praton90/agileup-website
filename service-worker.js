@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/agileup-website/precache-manifest.b031bbf0faa86c86074b8766946b0a69.js"
+  "/agileup-website/precache-manifest.d9a257f484351771e0077fb24d625e32.js"
 );
 
 self.addEventListener('message', (event) => {
