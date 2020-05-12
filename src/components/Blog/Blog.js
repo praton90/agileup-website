@@ -5,20 +5,17 @@ import Header from "../Layout/Header/Header";
 import Posts from "../../containers/Posts/Posts";
 import FullPost from "../../containers/Posts/FullPost/FullPost";
 import About from "../About/About";
-
-import styles from "./Blog.module.css";
+import Container from "../Aux/Container/Container";
 
 const blog = () => {
   return (
     <Fragment>
       <Header />
-      <div className={styles.Row}>
-        <div className={styles.Column}>
-          <Route path="/" exact component={Posts} />
-          <Route path="/about" component={About} />
-          <Route path="/posts/:id" component={FullPost} />
-        </div>
-      </div>
+      <Container>
+        <Route path="/" exact component={Posts} />
+        <Route path="/about" component={About} />
+        <Route path="/posts/:id" component={FullPost} />
+      </Container>
     </Fragment>
   );
 };

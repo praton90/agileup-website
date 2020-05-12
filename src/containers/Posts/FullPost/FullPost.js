@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Card from "../../../components/Card/Card";
+import Card from "../../../components/Aux/Card/Card";
 import Spinner from "../../../components/Spinner/Spinner";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -29,7 +29,7 @@ class FullPost extends Component {
       .then((entry) => {
         const fetchedPost = {
           title: entry.fields.title,
-          body: entry.fields.body.content[0].content[0].value,
+          body: entry.fields.content,
           author: entry.fields.author.fields.name,
           createdAt: new Date(entry.sys.createdAt).toDateString(),
           slides: entry.fields.slides.map((slide) => {

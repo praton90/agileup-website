@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 
-import Post from "../../components/Post/Post";
-import Card from "../../components/Card/Card";
+import PostItem from "../../components/PostItem/PostItem";
+import Card from "../../components/Aux/Card/Card";
 import { Link } from "react-router-dom";
 import Spinner from "../../components/Spinner/Spinner";
 
@@ -33,8 +33,9 @@ class Posts extends Component {
           return {
             id: post.sys.id,
             title: post.fields.title,
-            body: post.fields.body.content[0].content[0].value,
+            body: post.fields.content.substring(0, 250).concat(" ..."),
             author: post.fields.author.fields.name,
+            createdAt: post.sys.createdAt,
           };
         });
         console.log(fetchedPosts);
@@ -64,11 +65,11 @@ class Posts extends Component {
             to={"/posts/" + post.id}
             className={styles.CardLink}
           >
-            <Post
+            <PostItem
               title={post.title}
               content={post.body}
               author={post.author}
-              createdAt="12/05/2020"
+              createdAt={post.createdAt}
             />
           </Link>
         ));
