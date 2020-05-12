@@ -1,0 +1,41 @@
+.post__author {
+  display: flex;
+}
+
+.post__body {
+  text-align: left;
+  word-wrap: break-word;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.author__metadata {
+  width: 60%;
+  font-weight: bold;
+}
+
+.author__photo {
+  width: 40%;
+  margin-right: 0.5em;
+  max-width: 80px;
+  max-height: 100px;
+}
+
+.icon__link {
+  text-decoration: none;
+  color: #43963f;
+}
+
+.icon__link:hover {
+  opacity: 0.65;
+}
+
+@media (min-width: 600px) {
+  .post__body {
+    font-size: 1.4rem;
+  }
+
+  .post__title {
+    font-size: 3.4rem;
+  }
+}

@@ -1,11 +1,14 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 import Card from "../../../components/Aux/Card/Card";
 import Spinner from "../../../components/Spinner/Spinner";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { FaCalendar, FaLinkedinIn } from "react-icons/fa";
 
-var contentful = require("contentful");
+import "./FullPost.css";
+
+const contentful = require("contentful");
 
 class FullPost extends Component {
   constructor(props) {
@@ -27,10 +30,17 @@ class FullPost extends Component {
     this.client
       .getEntry(postId)
       .then((entry) => {
+        console.log(entry);
         const fetchedPost = {
           title: entry.fields.title,
           body: entry.fields.content,
-          author: entry.fields.author.fields.name,
+          author: {
+            name: entry.fields.author.fields.name,
+            imageUrl: entry.fields.author.fields.photo.fields.file.url,
+            imageDescription:
+              entry.fields.author.fields.photo.fields.description,
+            linkedIn: entry.fields.author.fields.linkedIn,
+          },
           createdAt: new Date(entry.sys.createdAt).toDateString(),
           slides: entry.fields.slides.map((slide) => {
             return {
@@ -56,15 +66,33 @@ class FullPost extends Component {
     if (!this.state.loading) {
       if (this.state.post) {
         content = (
-          <div>
-            <h1>{this.state.post.title}</h1>
-            <h3 style={{ textAlign: "left", color: "grey" }}>
-              Created: {this.state.post.createdAt} | Author:{" "}
-              {this.state.post.author}
-            </h3>
-            <p style={{ textAlign: "left", wordWrap: "break-word" }}>
-              {this.state.post.body}
-            </p>
+          <Fragment>
+            <div className="post__metadata">
+              <span className="icon">
+                <FaCalendar /> {this.state.post.createdAt}
+              </span>
+            </div>
+            <h1 className="post__title">{this.state.post.title}</h1>
+            <div className="post__author">
+              <img
+                className="author__photo"
+                src={this.state.post.author.imageUrl}
+                alt={this.state.post.author.imageDescription}
+              />
+              <div className="author__metadata">
+                <p>{this.state.post.author.name}</p>
+                <div className="author__icons">
+                  <a
+                    href={this.state.post.author.linkedIn}
+                    className="icon__link"
+                  >
+                    <FaLinkedinIn size="1.7em" title="LinkedIn Profile" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <p className="post__body">{this.state.post.body}</p>
             <div style={{ maxWidth: "600px", margin: "0 auto" }}>
               <Carousel>
                 {this.state.post.slides.map((image) => (
@@ -74,7 +102,7 @@ class FullPost extends Component {
                 ))}
               </Carousel>
             </div>
-          </div>
+          </Fragment>
         );
       } else {
         content = <p style={{ color: "red" }}>Something went wrong</p>;

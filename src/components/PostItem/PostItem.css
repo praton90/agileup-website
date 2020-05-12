@@ -8,6 +8,7 @@
   color: #fff;
   font-weight: bold;
   letter-spacing: 0.1em;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -28,6 +29,7 @@
   font-weight: 900;
   color: #43963f;
   margin-top: 0;
+  margin-bottom: 0.3em;
 }
 
 .icon {
@@ -35,6 +37,6 @@
   margin-top: 0;
 }
 
-.post__metadata + .post__metadata {
-  margin-top: 0.5em;
+.post__metadata {
+  margin-bottom: 0.5em;
 }
