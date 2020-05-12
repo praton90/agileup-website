@@ -5,7 +5,6 @@ import Card from "../../components/Aux/Card/Card";
 
 import Spinner from "../../components/Spinner/Spinner";
 
-import styles from "./Posts.module.css";
 const contentful = require("contentful");
 
 class Posts extends Component {
