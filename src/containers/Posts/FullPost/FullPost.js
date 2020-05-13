@@ -95,8 +95,8 @@ class FullPost extends Component {
             <p className="post__body">{this.state.post.body}</p>
             <div style={{ maxWidth: "600px", margin: "0 auto" }}>
               <Carousel>
-                {this.state.post.slides.map((image) => (
-                  <div>
+                {this.state.post.slides.map((image, index) => (
+                  <div key={index}>
                     <img src={image.url} alt={image.description} />
                   </div>
                 ))}

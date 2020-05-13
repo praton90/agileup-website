@@ -27,7 +27,6 @@ class Posts extends Component {
         content_type: "blogPost",
       })
       .then((res) => {
-        console.log("posts", res);
         const fetchedPosts = res.items.map((post) => {
           return {
             id: post.sys.id,
@@ -37,8 +36,6 @@ class Posts extends Component {
             createdAt: post.sys.createdAt,
           };
         });
-        console.log(fetchedPosts);
-
         this.setState({ posts: fetchedPosts, loading: false });
       })
       .catch((error) => {
@@ -58,7 +55,9 @@ class Posts extends Component {
 
     if (!this.state.loading) {
       if (this.state.posts.length) {
-        posts = this.state.posts.map((post, index) => <PostItem post={post} />);
+        posts = this.state.posts.map((post) => (
+          <PostItem post={post} key={post.id} />
+        ));
       } else {
         posts = (
           <Card>
