@@ -8,5 +8,11 @@
 .Header h1 {
   font-weight: 600;
   font-size: 50px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 600px) {
+  .Header h1 {
+    letter-spacing: 0.3em;
+  }
 }
