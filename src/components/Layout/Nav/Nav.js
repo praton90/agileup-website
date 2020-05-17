@@ -13,7 +13,7 @@ const nav = (props) => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about">ABOUT THIS</NavLink>
+          <NavLink to="/about">ABOUT</NavLink>
         </li>
       </ul>
     </nav>
