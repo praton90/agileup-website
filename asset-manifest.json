@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/agileup-website/static/css/main.c1c7ba34.chunk.css",
-    "main.js": "/agileup-website/static/js/main.49bf254f.chunk.js",
-    "main.js.map": "/agileup-website/static/js/main.49bf254f.chunk.js.map",
+    "main.css": "/agileup-website/static/css/main.dffbd0ad.chunk.css",
+    "main.js": "/agileup-website/static/js/main.291fff75.chunk.js",
+    "main.js.map": "/agileup-website/static/js/main.291fff75.chunk.js.map",
     "runtime-main.js": "/agileup-website/static/js/runtime-main.e61d1c91.js",
     "runtime-main.js.map": "/agileup-website/static/js/runtime-main.e61d1c91.js.map",
     "static/css/2.afd40c00.chunk.css": "/agileup-website/static/css/2.afd40c00.chunk.css",
-    "static/js/2.fd126efc.chunk.js": "/agileup-website/static/js/2.fd126efc.chunk.js",
-    "static/js/2.fd126efc.chunk.js.map": "/agileup-website/static/js/2.fd126efc.chunk.js.map",
+    "static/js/2.163790f7.chunk.js": "/agileup-website/static/js/2.163790f7.chunk.js",
+    "static/js/2.163790f7.chunk.js.map": "/agileup-website/static/js/2.163790f7.chunk.js.map",
     "index.html": "/agileup-website/index.html",
-    "precache-manifest.1dcadd1b90c9259ed4a3dea8995843a1.js": "/agileup-website/precache-manifest.1dcadd1b90c9259ed4a3dea8995843a1.js",
+    "precache-manifest.d860962acaaadfeb1c8c901a351a4c79.js": "/agileup-website/precache-manifest.d860962acaaadfeb1c8c901a351a4c79.js",
     "service-worker.js": "/agileup-website/service-worker.js",
     "static/css/2.afd40c00.chunk.css.map": "/agileup-website/static/css/2.afd40c00.chunk.css.map",
-    "static/css/main.c1c7ba34.chunk.css.map": "/agileup-website/static/css/main.c1c7ba34.chunk.css.map",
-    "static/js/2.fd126efc.chunk.js.LICENSE.txt": "/agileup-website/static/js/2.fd126efc.chunk.js.LICENSE.txt"
+    "static/css/main.dffbd0ad.chunk.css.map": "/agileup-website/static/css/main.dffbd0ad.chunk.css.map",
+    "static/js/2.163790f7.chunk.js.LICENSE.txt": "/agileup-website/static/js/2.163790f7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e61d1c91.js",
     "static/css/2.afd40c00.chunk.css",
-    "static/js/2.fd126efc.chunk.js",
-    "static/css/main.c1c7ba34.chunk.css",
-    "static/js/main.49bf254f.chunk.js"
+    "static/js/2.163790f7.chunk.js",
+    "static/css/main.dffbd0ad.chunk.css",
+    "static/js/main.291fff75.chunk.js"
   ]
 }
