@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "68b75523c3db8fd31c9bfb64086e54c2",
+    "revision": "933bd98f0435867cd044e9eec55df33e",
     "url": "/agileup-website/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agileup-website/static/css/2.afd40c00.chunk.css"
   },
   {
-    "revision": "a53176b78fd3b0ed46eb",
-    "url": "/agileup-website/static/css/main.dffbd0ad.chunk.css"
+    "revision": "af4997ed79b957338452",
+    "url": "/agileup-website/static/css/main.7003ef33.chunk.css"
   },
   {
     "revision": "99a361047d6ed0bea78b",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agileup-website/static/js/2.163790f7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a53176b78fd3b0ed46eb",
+    "revision": "af4997ed79b957338452",
     "url": "/agileup-website/static/js/main.291fff75.chunk.js"
   },
   {
