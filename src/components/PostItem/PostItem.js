@@ -23,7 +23,7 @@ const postItem = (props) => {
         </span>
         {new Date(props.post.createdAt).toDateString()}
       </div>
-      <p>{props.post.body}</p>
+      <p className="post__intro">{props.post.body}</p>
       <Link className="btn btn--right" to={"/posts/" + props.post.id}>
         Read More
       </Link>

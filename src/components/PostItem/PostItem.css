@@ -40,3 +40,7 @@
 .post__metadata {
   margin-bottom: 0.5em;
 }
+
+.post__intro {
+  line-height: 1.4em;
+}
