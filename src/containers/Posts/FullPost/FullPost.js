@@ -5,6 +5,8 @@ import Spinner from "../../../components/Spinner/Spinner";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaCalendar, FaLinkedinIn } from "react-icons/fa";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { BLOCKS } from "@contentful/rich-text-types";
 
 import "./FullPost.css";
 
@@ -30,10 +32,10 @@ class FullPost extends Component {
     this.client
       .getEntry(postId)
       .then((entry) => {
-        console.log(entry);
         const fetchedPost = {
           title: entry.fields.title,
-          body: entry.fields.content,
+          content: entry.fields.content,
+          body: entry.fields.body,
           author: {
             name: entry.fields.author.fields.name,
             imageUrl: entry.fields.author.fields.photo.fields.file.url,
@@ -59,6 +61,20 @@ class FullPost extends Component {
         console.log("Something wrong happened", error);
       });
   }
+
+  formatPostBody = (postContent) => {
+    const Text = ({ children }) => <p>{children}</p>;
+
+    const options = {
+      renderNode: {
+        [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
+      },
+      renderText: (text) =>
+        text.split("\n").flatMap((text, i) => [i > 0 && <br />, text]),
+    };
+
+    return documentToReactComponents(postContent, options);
+  };
 
   render() {
     let content = <Spinner />;
@@ -92,7 +108,10 @@ class FullPost extends Component {
               </div>
             </div>
 
-            <p className="post__body">{this.state.post.body}</p>
+            <p className="post__body">
+              {this.formatPostBody(this.state.post.body)}
+            </p>
+
             <div style={{ maxWidth: "600px", margin: "0 auto" }}>
               <Carousel>
                 {this.state.post.slides.map((image, index) => (
