@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
 import Card from "../../../components/Aux/Card/Card";
 import Spinner from "../../../components/Spinner/Spinner";
@@ -8,9 +9,9 @@ import { FaCalendar, FaLinkedinIn } from "react-icons/fa";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
 
-import "./FullPost.css";
+import contentfulClient from "../../../contentfulClient";
 
-const contentful = require("contentful");
+import "./FullPost.css";
 
 class FullPost extends Component {
   constructor(props) {
@@ -19,24 +20,22 @@ class FullPost extends Component {
       post: null,
       loading: true,
     };
-
-    this.client = contentful.createClient({
-      space: "5ewpe53pwxis",
-      accessToken: "Xerq7AgfY3obWybUXHTuhYnXSNUa5aHgd3l5SQnY-jk",
-    });
+    
   }
 
   componentDidMount() {
     const postId = this.props.match.params.id;
 
-    this.client
+    contentfulClient
       .getEntry(postId)
       .then((entry) => {
+        console.log(entry)
         const fetchedPost = {
           title: entry.fields.title,
           content: entry.fields.content,
           body: entry.fields.body,
           author: {
+            id: entry.fields.author.sys.id,
             name: entry.fields.author.fields.name,
             imageUrl: entry.fields.author.fields.photo.fields.file.url,
             imageDescription:
@@ -96,7 +95,7 @@ class FullPost extends Component {
                 alt={this.state.post.author.imageDescription}
               />
               <div className="author__metadata">
-                <p>{this.state.post.author.name}</p>
+                <NavLink to={"/author/" + this.state.post.author.id}>{this.state.post.author.name}</NavLink>
                 <div className="author__icons">
                   <a
                     href={this.state.post.author.linkedIn}
