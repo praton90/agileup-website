@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/agileup-website/static/css/main.7003ef33.chunk.css",
-    "main.js": "/agileup-website/static/js/main.291fff75.chunk.js",
-    "main.js.map": "/agileup-website/static/js/main.291fff75.chunk.js.map",
+    "main.js": "/agileup-website/static/js/main.e432b7e3.chunk.js",
+    "main.js.map": "/agileup-website/static/js/main.e432b7e3.chunk.js.map",
     "runtime-main.js": "/agileup-website/static/js/runtime-main.e61d1c91.js",
     "runtime-main.js.map": "/agileup-website/static/js/runtime-main.e61d1c91.js.map",
     "static/css/2.afd40c00.chunk.css": "/agileup-website/static/css/2.afd40c00.chunk.css",
-    "static/js/2.163790f7.chunk.js": "/agileup-website/static/js/2.163790f7.chunk.js",
-    "static/js/2.163790f7.chunk.js.map": "/agileup-website/static/js/2.163790f7.chunk.js.map",
+    "static/js/2.ce93e72d.chunk.js": "/agileup-website/static/js/2.ce93e72d.chunk.js",
+    "static/js/2.ce93e72d.chunk.js.map": "/agileup-website/static/js/2.ce93e72d.chunk.js.map",
     "index.html": "/agileup-website/index.html",
-    "precache-manifest.79d728c6d45d6928ec6270255b777e67.js": "/agileup-website/precache-manifest.79d728c6d45d6928ec6270255b777e67.js",
+    "precache-manifest.47708370473d29e5ececc602d6fadf0f.js": "/agileup-website/precache-manifest.47708370473d29e5ececc602d6fadf0f.js",
     "service-worker.js": "/agileup-website/service-worker.js",
     "static/css/2.afd40c00.chunk.css.map": "/agileup-website/static/css/2.afd40c00.chunk.css.map",
     "static/css/main.7003ef33.chunk.css.map": "/agileup-website/static/css/main.7003ef33.chunk.css.map",
-    "static/js/2.163790f7.chunk.js.LICENSE.txt": "/agileup-website/static/js/2.163790f7.chunk.js.LICENSE.txt"
+    "static/js/2.ce93e72d.chunk.js.LICENSE.txt": "/agileup-website/static/js/2.ce93e72d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e61d1c91.js",
     "static/css/2.afd40c00.chunk.css",
-    "static/js/2.163790f7.chunk.js",
+    "static/js/2.ce93e72d.chunk.js",
     "static/css/main.7003ef33.chunk.css",
-    "static/js/main.291fff75.chunk.js"
+    "static/js/main.e432b7e3.chunk.js"
   ]
 }
