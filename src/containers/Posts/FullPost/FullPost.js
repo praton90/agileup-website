@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 import Card from "../../../components/Aux/Card/Card";
 import Spinner from "../../../components/Spinner/Spinner";
@@ -20,7 +20,7 @@ class FullPost extends Component {
       post: null,
       loading: true,
     };
-    
+
   }
 
   componentDidMount() {
@@ -82,20 +82,20 @@ class FullPost extends Component {
       if (this.state.post) {
         content = (
           <Fragment>
-            <div className="post__metadata">
+            {/* <div className="post__metadata">
               <span className="icon">
                 <FaCalendar /> {this.state.post.createdAt}
               </span>
-            </div>
+            </div> */}
             <h1 className="post__title">{this.state.post.title}</h1>
-            <div className="post__author">
+            {/* <div className="post__author">
               <img
                 className="author__photo"
                 src={this.state.post.author.imageUrl}
                 alt={this.state.post.author.imageDescription}
               />
               <div className="author__metadata">
-                <NavLink to={"/author/" + this.state.post.author.id}>{this.state.post.author.name}</NavLink>
+                <p>{this.state.post.author.name}</p>
                 <div className="author__icons">
                   <a
                     href={this.state.post.author.linkedIn}
@@ -105,11 +105,7 @@ class FullPost extends Component {
                   </a>
                 </div>
               </div>
-            </div>
-
-            <p className="post__body">
-              {this.formatPostBody(this.state.post.body)}
-            </p>
+            </div> */}
 
             <div style={{ maxWidth: "600px", margin: "0 auto" }}>
               <Carousel>
@@ -120,6 +116,11 @@ class FullPost extends Component {
                 ))}
               </Carousel>
             </div>
+
+            <p className="post__body">
+              {this.formatPostBody(this.state.post.body)}
+            </p>
+
           </Fragment>
         );
       } else {
