@@ -5,7 +5,7 @@ import Card from "../../../components/Aux/Card/Card";
 import Spinner from "../../../components/Spinner/Spinner";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { FaCalendar, FaLinkedinIn } from "react-icons/fa";
+// import { FaCalendar, FaLinkedinIn } from "react-icons/fa";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
 
