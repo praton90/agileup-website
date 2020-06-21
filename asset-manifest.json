@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/agileup-website/static/css/main.d78da72d.chunk.css",
+    "main.css": "/agileup-website/static/css/main.2464bc04.chunk.css",
     "main.js": "/agileup-website/static/js/main.ecc34743.chunk.js",
     "main.js.map": "/agileup-website/static/js/main.ecc34743.chunk.js.map",
     "runtime-main.js": "/agileup-website/static/js/runtime-main.e61d1c91.js",
@@ -9,17 +9,17 @@
     "static/js/2.99a95c3c.chunk.js": "/agileup-website/static/js/2.99a95c3c.chunk.js",
     "static/js/2.99a95c3c.chunk.js.map": "/agileup-website/static/js/2.99a95c3c.chunk.js.map",
     "index.html": "/agileup-website/index.html",
-    "precache-manifest.a8165213231a63cad616a6bc3126090b.js": "/agileup-website/precache-manifest.a8165213231a63cad616a6bc3126090b.js",
+    "precache-manifest.7ab9e12c5b72ca650a26e591ebc587d2.js": "/agileup-website/precache-manifest.7ab9e12c5b72ca650a26e591ebc587d2.js",
     "service-worker.js": "/agileup-website/service-worker.js",
     "static/css/2.afd40c00.chunk.css.map": "/agileup-website/static/css/2.afd40c00.chunk.css.map",
-    "static/css/main.d78da72d.chunk.css.map": "/agileup-website/static/css/main.d78da72d.chunk.css.map",
+    "static/css/main.2464bc04.chunk.css.map": "/agileup-website/static/css/main.2464bc04.chunk.css.map",
     "static/js/2.99a95c3c.chunk.js.LICENSE.txt": "/agileup-website/static/js/2.99a95c3c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e61d1c91.js",
     "static/css/2.afd40c00.chunk.css",
     "static/js/2.99a95c3c.chunk.js",
-    "static/css/main.d78da72d.chunk.css",
+    "static/css/main.2464bc04.chunk.css",
     "static/js/main.ecc34743.chunk.js"
   ]
 }
